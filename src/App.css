@@ -1,0 +1,220 @@
+body{
+  background-color: #171717;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.App {
+  color: rgba(255, 255, 255, 0.848);
+  text-align: center;
+}
+
+h2{
+  font-weight: lighter;
+}
+
+header{
+  font-family: Helvetica;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(144, 144, 144, 0.525);
+  margin: auto;
+  padding: 10px;
+  font-size: 2rem;
+  width: 80vw;
+}
+
+/* --------- game-header ----------- */
+.board-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-header{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+}
+
+input{
+  width: 20%;
+  padding: 10px 10px;
+  background-color: #2e2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  transition: transform 100ms linear;
+}
+
+input:hover{
+  transform: scale(1.1);
+}
+
+input:focus::placeholder{
+  color: transparent;
+}
+
+button{
+  background-color: rgb(50, 144, 50);
+  width: 30%;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: transform 100ms linear;
+}
+
+button:active{
+  background-color: rgba(51, 153, 51, 0.821);
+  transform: scale(1.05);
+}
+
+/* .board, .keyboard, .board-header, .board-grid, .grid-row, .cell, .hints, .hints-row, .hint{
+  border: 1px solid #fff;
+} */
+
+/*------- board css -------- */
+.board{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.grid-and-hints{
+  display: flex;
+  margin-top: 10px;
+}
+
+.board-grid, .hints{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.grid-row, .hints-row{
+  display: flex;
+  min-width: min-content;
+  justify-content: space-evenly;
+}
+
+.cell, .hint{
+  width: 2.1em;
+  height: 2.1em;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.5px solid rgb(67, 66, 66);
+  margin: 2px;
+  font-weight: bold;
+}
+
+.hint{
+  border-radius: 50%;
+}
+
+/* --------- keyboard css -------- */
+
+/* .keyboard{
+  border: 1px solid white;
+} */
+.keys-row, .bottom-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.key{
+  font-size: 1rem;
+  background-color: rgb(121, 116, 116);
+  border: none;
+  padding: 2px;
+  width: 2.25rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#big-key{
+  width: 5rem;
+}
+
+#disabled{
+  background-color:rgb(60, 59, 59);
+  opacity: 50%;
+}
+
+/* ------------ Misc ----------- */
+
+#correct{
+  transition: 250ms linear;
+  background-color: rgb(55, 156, 55);
+  border: none;
+}
+#close{
+  transition: 250ms linear;
+  background-color: rgb(208, 152, 48);
+  border: none;
+}
+#incorrect{
+  transition: 250ms linear;
+  background-color:rgb(58, 56, 56);
+  border: none;
+}
+#cancel{
+  transition: 250ms linear;
+  background-color:rgba(49, 48, 48, 0.442);
+  opacity: 60%;
+  border: none;
+}
+
+.type{
+  transition: transform 150ms linear;
+  transform: scale(1.2);
+  color: lightgreen;
+  background-color:rgb(38, 38, 38);
+}
+
+.reveal{
+  transform: scaleX(0.1);
+}
+
+.oops{
+  color: rgb(174, 57, 57);
+}
+
+/* --------- letter-colors ---------- */
+
+.a{color: lightcoral;}
+.b{color: lightblue;}
+.c{color: lightcyan;}
+.d{color: darkturquoise;}
+.e{color: lightgreen;}
+.f{color: lightskyblue;}
+.g{color: lightseagreen;}
+.h{color: hotpink;}
+.i{color: lime;}
+.j{color: lightpink;}
+.k{color: darkgreen;}
+.l{color: greenyellow;}
+.m{color: magenta;}
+.n{color: darkorange;}
+.o{color: yellow;}
+.p{color: crimson;}
+.q{color: darkcyan;}
+.r{color: rebeccapurple;}
+.s{color: rgb(118, 103, 213);}
+.t{color: royalblue;}
+.u{color: orangered;}
+.v{color: violet;}
+.w{color: rgb(22, 151, 22);}
+.x{color: rgb(161, 161, 38);}
+.y{color: lightseagreen;}
+.z{color: aqua;}
